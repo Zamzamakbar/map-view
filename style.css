@@ -1,0 +1,45 @@
+.hero-section {
+    background-image: url('assets/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.hero-section .btn-primary {
+    font-size: 1.4rem;
+    padding: 12px 50px;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('fonts/league-spartan.woff2') format('woff2'),
+        /* Modern Browsers */
+        url('fonts/league-spartan.woff') format('woff');
+    /* Legacy Browsers */
+    font-weight: bold;
+    font-style: normal;
+}
+
+.favicon {
+
+    font-family: 'League Spartan';
+    font-weight: 30px;
+    font-size: 40px;
+    
+}
+#hero-section {
+    color: black;
+}
