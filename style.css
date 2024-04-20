@@ -22,23 +22,13 @@
     font-size: 1.4rem;
     padding: 12px 50px;
 }
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
-@font-face {
-    font-family: 'League Spartan';
-    src: url('fonts/league-spartan.woff2') format('woff2'),
-        /* Modern Browsers */
-        url('fonts/league-spartan.woff') format('woff');
-    /* Legacy Browsers */
-    font-weight: bold;
+.league-spartan-favicon {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
     font-style: normal;
-}
-
-.favicon {
-
-    font-family: 'League Spartan';
-    font-weight: 30px;
-    font-size: 40px;
-    
 }
 #hero-section {
     color: black;
