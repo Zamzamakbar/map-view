@@ -29,19 +29,15 @@
 
         /* style hero-section */
         .hero-section {
-            background-image: url('assets/hero-background.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding: 100px ;
+            
         }
 
         .hero-section h1 {
-            font-size: 4rem;
+            font-size: 5rem;
             font-weight: bold;
-            margin-bottom: 20px;
             font-family: 'League Spartan', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         .hero-section p {
@@ -87,9 +83,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link active mx-3" href="#home">Home</a>
-                    <a class="nav-link active mx-3" href="#features-section">Features</a>
-                    <a class="nav-link active mx-3" href="#cta-section">Download</a>
+                    <a class="nav-link active mx-3 " style="font-weight: 600;" href="#home">Home</a>
+                    <a class="nav-link active mx-3" style="font-weight: 600;" href="#features-section">Features</a>
+                    <a class="nav-link active mx-3" style="font-weight: 600;" href="#cta-section">Download</a>
                 </div>
             </div>
         </div>
@@ -98,12 +94,17 @@
     <!-- Hero Section -->
     <section class="hero-section " id="hero-section">
         <div class="container">
-            <div class="col-8">
-                <h1><span>Welcome to </span><span class="brand-text-jalanin">Jalanin</span><span
-                        class="brand-text-aja">Aja</span></h1>
-                <p>Aplikasi untuk menampilkan rekomendasi tempat yang mau dikunjungi berdasarkan kategori dan
-                    menampilkan rute menuju tempat yang dituju</p>
-                <a href="#" class="btn btn-primary btn-lg">Start Exploring</a>
+            <div class="row ">
+                <div class="col-lg-5 pt-5">
+                    <h1><span style="font-size: 2.5rem;">Selamat datang di </span><span
+                            class="brand-text-jalanin">Jalanin</span><span class="brand-text-aja">Aja</span></h1>
+                    <p>Aplikasi untuk menampilkan rekomendasi tempat yang mau dikunjungi berdasarkan kategori dan
+                        menampilkan rute menuju tempat yang dituju</p>
+                    <a href="#" class="btn btn-primary btn-lg">Start Exploring</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="assets/mockup-1.png" alt="" srcset="" height="600px">
+                </div>
             </div>
         </div>
     </section>
@@ -146,7 +147,8 @@
                             <div class="card-body text-center">
                                 <i class="bi bi-shield-check fs-3 mb-3 text-primary"></i>
                                 <h5 class="card-title">Secure Platform</h5>
-                                <p class="card-text">Ayok pakai apikasi jalanin aja Guys!Aplikasinya menarik bangetss </p>
+                                <p class="card-text">Ayok pakai apikasi jalanin aja Guys!Aplikasinya menarik bangetss
+                                </p>
                             </div>
                         </div>
                     </div>
