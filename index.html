@@ -13,7 +13,6 @@
     <style>
         /* style navbar */
         .navbar-brand {
-
             font-family: 'League Spartan', sans-serif;
             font-weight: 650;
             font-size: 40px;
@@ -21,8 +20,7 @@
 
         .brand-text-jalanin {
             color: #073750;
-
-
+            
         }
 
         .brand-text-aja {
@@ -31,9 +29,7 @@
 
         .navbar-scrolled {
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-
             transition: box-shadow 0.3s ease;
-
         }
 
         .navbar-nav .nav-link {
@@ -46,12 +42,17 @@
             border-bottom-color: #073750;
         }
 
-
-
         /* style hero-section */
         .hero-section {
-            padding: 100px;
+            padding: 90px 90px 90px 90px;
+        }
 
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 20px;
+                padding-top: 70px;
+            }
         }
 
         .hero-section h1 {
@@ -63,7 +64,7 @@
 
         .hero-section p {
             font-size: 1.8rem;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
             font-family: 'League Spartan', sans-serif;
         }
 
@@ -73,16 +74,69 @@
             font-family: 'League Spartan', sans-serif;
         }
 
-
-
         #hero-section {
             color: black;
         }
 
+        @media (max-width: 768px) {
+            .hero-section img {
+                height: 280px;
+                margin-left: -2rem;
+            }
+
+            .hero-section h1 {
+                font-size: 0.3rem;
+            }
+
+            .hero-section h1 .brand-text-jalanin,
+            .brand-text-aja {
+                font-size: 3rem;
+            }
+
+            .hero-section p {
+                font-size: 1.2rem;
+            }
+        }
+
         /* style feature-section */
         #features-section {
-            background-color: #B3D5E6;
+            padding: 100px 0;
         }
+
+        #features-section h2 {
+            padding-bottom: 5rem;
+        }
+        #features-section .fitur-satu {
+                margin-top: 10rem;
+
+            }
+
+        @media (max-width: 768px) {
+            #features-section {
+                padding: 50px 0;
+            }
+
+            #features-section img {
+                max-height: 400px;
+                width: auto;
+            }
+            #features-section .fitur-satu {
+                margin-top: 1rem;
+
+            }
+
+
+        }
+
+        #features-section .col-md-6 {
+            flex: 1;
+        }
+
+        #features-section img {
+            max-height: 500px;
+            width: auto;
+        }
+
 
         /* style cta-section */
     </style>
@@ -95,7 +149,7 @@
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="assets/logo-polos.png" alt="Logo" height="50"
                     class="d-inline-block align-text-center me-2 mb-2">
-                <span class="brand-text-jalanin me-2">Jalanin</span><span class="brand-text-aja">Aja</span>
+                <span class="brand-text-jalanin me-1">Jalanin</span><span class="brand-text-aja">Aja</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -116,11 +170,11 @@
 
     <!-- Hero Section -->
     <section class="hero-section " id="hero-section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row ">
-                <div class="col-md-6 pt-5">
+                <div class="col-lg-6 pt-5">
                     <h1><span style="font-size: 2.5rem;">Selamat datang di </span><span
-                            class="brand-text-jalanin">Jalanin</span><span class="brand-text-aja">Aja</span></h1>
+                            class="brand-text-jalanin">Jalanin</span><span class="brand-text-aja ms-1">Aja</span></h1>
                     <p>Aplikasi untuk menampilkan rekomendasi tempat yang mau dikunjungi berdasarkan kategori dan
                         menampilkan rute menuju tempat yang dituju</p>
                     <a href="#" class="btn btn-primary btn-lg">Start Exploring</a>
@@ -135,62 +189,60 @@
     <!-- Features Section -->
     <section class="features-section py-5" id="features-section">
         <div class="container">
-            <h2 class="text-center mb-4">Features</h2>
-            <div class="col">
-                <div class="row py-4 justify-content-center align-text-center">
-                    <div class="col-md-6">
-                        <div class="card border-0">
-                            <div class="card-body text-center">
-                                <i class="bi bi-speedometer2 fs-3 mb-3 text-primary"></i>
-                                <h5 class="card-title">Cari Tempat Terdekat</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-                                    aliquam officia perspiciatis sapiente iste esse, consectetur dolorum soluta eligendi
-                                    recusandae fugiat corrupti in, debitis, odio quia eos ab eum! Commodi.</p>
-                            </div>
+            <h2 class="text-center">Features</h2>
+            <div class="row py-4 text-center">
+                <div class="col-md-6 fitur-satu">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-speedometer2 fs-3 mb-3 text-primary"></i>
+                            <h5 class="card-title">Cari Tempat Terdekat</h5>
+                            <p class="card-text">Anda dapat dengan mudah menemukan lokasi terdekat yang sesuai dengan
+                                kebutuhan Anda. Mulai jelajahi sekitar Anda tanpa kesulitan dan temukan semua yang Anda
+                                perlukan dalam waktu singkat.</p>
                         </div>
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="assets/mockup-nearby_place.png" alt="mockup-nearby_place" height="500px">
                     </div>
                 </div>
-                <div class="row py-4">
-                    <div class="col-md-6 text-center">
-                        <img src="assets/mockup-add-category.png" alt="add-category-feature" height="500px">
-                    </div>
-                    <div class="col-md-6">
-                        <div class="card border-0">
-                            <div class="card-body text-center">
-                                <i class="bi bi-globe fs-3 mb-3 text-primary"></i>
-                                <h5 class="card-title">Menambahkan Kategori Tempat Anda Sendiri</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                                    dolorum quos fugiat alias animi aliquid, corporis placeat ipsum sint delectus amet?
-                                    Aspernatur, quos consequuntur quisquam nostrum voluptate nisi est nihil.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="row py-4 ">
-
-                    <div class="col-md-6 text-center">
-                        <div class="card border-0">
-                            <div class="card-body text-center">
-                                <i class="bi bi-shield-check fs-3 mb-3 text-primary"></i>
-                                <h5 class="card-title">Detail Kategori Tempat</h5>
-                                <p class="card-text">Ayok pakai apikasi jalanin aja Guys!Aplikasinya menarik bangetss
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 text-center">
-                        <img src="assets/mockup-detail-place.png" alt="mockup-detail-place" height="500px">
-                    </div>
-
+                <div class="col-md-6 text-center">
+                    <img src="assets/mockup-nearby_place.png" alt="mockup-nearby_place" style="max-height: 500px;">
                 </div>
             </div>
-        </div>
+            <div class="row py-4 text-center">
+                <div class="col-md-6 text-center">
+                    <img src="assets/mockup-add-category.png" alt="add-category-feature" style="max-height: 500px;">
+                </div>
+                <div class="col-md-6" style="margin-top: 10rem ;">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-globe fs-3 mb-3 text-primary"></i>
+                            <h5 class="card-title">Menambahkan Kategori Tempat Anda Sendiri</h5>
+                            <p class="card-text">Anda memiliki kebebasan untuk menyesuaikan pengalaman Anda sepenuhnya.
+                                Tidak lagi terbatas pada kategori yang ada, Anda dapat membuat kategori baru yang sesuai
+                                dengan kebutuhan unik Anda. Temukan kesempatan baru, dan buat penjelajahan Anda lebih
+                                personal dan efisien.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-md-6 text-center" style="margin-top: 10rem;">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check fs-3 mb-3 text-primary"></i>
+                            <h5 class="card-title">Detail Kategori Tempat</h5>
+                            <p class="card-text">Anda dapat dengan mudah mengakses semua informasi yang Anda butuhkan
+                                tentang setiap kategori tempat. Jelajahi detail yang relevan dan berguna untuk
+                                memastikan kebutuhan Anda terpenuhi dengan baik.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="assets/mockup-detail-place.png" alt="mockup-detail-place" style="max-height: 500px;">
+                </div>
+            </div>
+
         </div>
     </section>
+
 
 
     <!-- Call to Action -->
