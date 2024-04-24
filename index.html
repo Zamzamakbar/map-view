@@ -20,7 +20,7 @@
 
         .brand-text-jalanin {
             color: #073750;
-            
+
         }
 
         .brand-text-aja {
@@ -40,6 +40,18 @@
         .navbar-nav .nav-link:hover,
         .navbar-nav .nav-link:focus {
             border-bottom-color: #073750;
+        }
+        @media(max-width:768px){
+            .navbar-brand img{
+                height: 35px;
+                
+                
+            }
+            .navbar-brand span{
+                font-size: 30px;
+            }
+         
+        
         }
 
         /* style hero-section */
@@ -103,13 +115,19 @@
             padding: 100px 0;
         }
 
+        #features-section .fitur-text {
+            margin-top: 10rem;
+
+        }
+
         #features-section h2 {
             padding-bottom: 5rem;
         }
-        #features-section .fitur-satu {
-                margin-top: 10rem;
 
-            }
+        #features-section .fitur-satu {
+            margin-top: 10rem;
+
+        }
 
         @media (max-width: 768px) {
             #features-section {
@@ -120,22 +138,40 @@
                 max-height: 400px;
                 width: auto;
             }
+
             #features-section .fitur-satu {
                 margin-top: 1rem;
 
             }
 
+            .fitur-kedua .col-lg-6 {
+                flex-basis: 100%;
+                /* Mengatur lebar menjadi 100% pada layar kecil */
+            }
+
+            .fitur-kedua .col-lg-6:first-child {
+                order: 2;
+                /* Pindahkan gambar ke bawah teks */
+            }
+
+            #features-section .fitur-text {
+                margin-top: 10px;
+
+            }
 
         }
 
         #features-section .col-lg-6 {
             flex: 1;
+
         }
 
         #features-section img {
             max-height: 500px;
             width: auto;
         }
+
+        @media(max-width : 768px) {}
 
 
         /* style cta-section */
@@ -192,7 +228,7 @@
         <div class="container">
             <h2 class="text-center">Features</h2>
             <div class="row py-4 text-center">
-                <div class="col-lg-6 fitur-satu">
+                <div class="col-lg-6  fitur-satu fitur-text">
                     <div class="card border-0">
                         <div class="card-body text-center">
                             <i class="bi bi-speedometer2 fs-3 mb-3 text-primary"></i>
@@ -207,11 +243,11 @@
                     <img src="assets/mockup-nearby_place.png" alt="mockup-nearby_place" style="max-height: 500px;">
                 </div>
             </div>
-            <div class="row py-4 text-center">
+            <div class="row py-4 text-center fitur-kedua">
                 <div class="col-lg-6 text-center">
                     <img src="assets/mockup-add-category.png" alt="add-category-feature" style="max-height: 500px;">
                 </div>
-                <div class="col-lg-6" style="margin-top: 10rem ;">
+                <div class="col-lg-6 fitur-text">
                     <div class="card border-0">
                         <div class="card-body text-center">
                             <i class="bi bi-globe fs-3 mb-3 text-primary"></i>
@@ -224,8 +260,9 @@
                     </div>
                 </div>
             </div>
+
             <div class="row py-4">
-                <div class="col-lg-6 text-center" style="margin-top: 10rem;">
+                <div class="col-lg-6 text-center fitur-text">
                     <div class="card border-0">
                         <div class="card-body text-center">
                             <i class="bi bi-shield-check fs-3 mb-3 text-primary"></i>
