@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
     <style>
+
+
         /* style navbar */
         .navbar-brand {
             font-family: 'League Spartan', sans-serif;
@@ -41,17 +43,19 @@
         .navbar-nav .nav-link:focus {
             border-bottom-color: #073750;
         }
-        @media(max-width:768px){
-            .navbar-brand img{
+
+        @media(max-width:992px) {
+            .navbar-brand img {
                 height: 35px;
-                
-                
+
+
             }
-            .navbar-brand span{
+
+            .navbar-brand span {
                 font-size: 30px;
             }
-         
-        
+
+
         }
 
         /* style hero-section */
@@ -60,7 +64,7 @@
         }
 
         /* Responsiveness */
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             .hero-section {
                 padding: 20px;
                 padding-top: 70px;
@@ -90,7 +94,7 @@
             color: black;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             .hero-section img {
                 height: 280px;
                 margin-left: -2rem;
@@ -113,10 +117,12 @@
         /* style feature-section */
         #features-section {
             padding: 100px 0;
+            background-color: #e1f4fd;
         }
 
         #features-section .fitur-text {
             margin-top: 10rem;
+            font-family: 'League Spartan', sans-serif;
 
         }
 
@@ -129,7 +135,7 @@
 
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 992px) {
             #features-section {
                 padding: 50px 0;
             }
@@ -143,6 +149,7 @@
                 margin-top: 1rem;
 
             }
+            
 
             .fitur-kedua .col-lg-6 {
                 flex-basis: 100%;
@@ -170,8 +177,12 @@
             max-height: 500px;
             width: auto;
         }
+        #features-section .card-text {
+            margin-top: -5rem;
 
-        @media(max-width : 768px) {}
+        }
+
+        @media(max-width : 992px) {}
 
 
         /* style cta-section */
@@ -226,13 +237,14 @@
     <!-- Features Section -->
     <section class="features-section py-5" id="features-section">
         <div class="container">
-            <h2 class="text-center">Features</h2>
+            <h1 class="text-center" style="font-family: 'League Spartan', sans-serif; font-size: 50px; font-weight: 600; text-decoration: underline; text-decoration-line: underline; text-decoration-color: black; text-decoration-thickness: 3px; ">Features</h1>
+
             <div class="row py-4 text-center">
                 <div class="col-lg-6  fitur-satu fitur-text">
-                    <div class="card border-0">
+                    <div class="card border-0" style="background-color: transparent;">
                         <div class="card-body text-center">
                             <i class="bi bi-speedometer2 fs-3 mb-3 text-primary"></i>
-                            <h5 class="card-title">Cari Tempat Terdekat</h5>
+                            <h2 class="card-title">Cari Tempat Terdekat</h2>
                             <p class="card-text">Anda dapat dengan mudah menemukan lokasi terdekat yang sesuai dengan
                                 kebutuhan Anda. Mulai jelajahi sekitar Anda tanpa kesulitan dan temukan semua yang Anda
                                 perlukan dalam waktu singkat.</p>
@@ -248,10 +260,10 @@
                     <img src="assets/mockup-add-category.png" alt="add-category-feature" style="max-height: 500px;">
                 </div>
                 <div class="col-lg-6 fitur-text">
-                    <div class="card border-0">
+                    <div class="card border-0" style="background-color: transparent;">
                         <div class="card-body text-center">
                             <i class="bi bi-globe fs-3 mb-3 text-primary"></i>
-                            <h5 class="card-title">Menambahkan Kategori Tempat Anda Sendiri</h5>
+                            <h2 class="card-title">Menambahkan Kategori Tempat Anda Sendiri</h2>
                             <p class="card-text">Anda memiliki kebebasan untuk menyesuaikan pengalaman Anda sepenuhnya.
                                 Tidak lagi terbatas pada kategori yang ada, Anda dapat membuat kategori baru yang sesuai
                                 dengan kebutuhan unik Anda. Temukan kesempatan baru, dan buat penjelajahan Anda lebih
@@ -263,10 +275,10 @@
 
             <div class="row py-4">
                 <div class="col-lg-6 text-center fitur-text">
-                    <div class="card border-0">
+                    <div class="card border-0" style="background-color: transparent;">
                         <div class="card-body text-center">
                             <i class="bi bi-shield-check fs-3 mb-3 text-primary"></i>
-                            <h5 class="card-title">Detail Kategori Tempat</h5>
+                            <h2 class="card-title ">Detail Kategori Tempat</h2>
                             <p class="card-text">Anda dapat dengan mudah mengakses semua informasi yang Anda butuhkan
                                 tentang setiap kategori tempat. Jelajahi detail yang relevan dan berguna untuk
                                 memastikan kebutuhan Anda terpenuhi dengan baik.</p>
