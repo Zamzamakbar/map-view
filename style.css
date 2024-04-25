@@ -20,7 +20,7 @@
 
 .hero-section .btn-primary {
     font-size: 1.4rem;
-    padding: 12px 50px;
+    /* padding: 12px 50px; */
 }
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
@@ -51,8 +51,5 @@
     margin-bottom: 40px;
 }
 
-.cta-section .btn-primary {
-    font-size: 1.5rem;
-    padding: 12px 50px;
-}
+
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');

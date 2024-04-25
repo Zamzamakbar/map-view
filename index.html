@@ -105,7 +105,7 @@
 
         .hero-section .btn-primary {
             font-size: 1.4rem;
-            padding: 12px 50px;
+            /* padding: 12px 50px; */
             font-family: 'League Spartan', sans-serif;
         }
 
@@ -215,7 +215,7 @@
         .cta-section h1 {
             
             font-weight: bold;
-            font-family: 'League Spartan', sans-serif;
+            font-family: 'League Spartan', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .cta-Download {
@@ -233,21 +233,30 @@
 
         .cta-section p {
             font-size: 1.3rem;
-            margin-bottom: 10px;
+            /* margin-bottom: 10px; */
             font-family: 'League Spartan', sans-serif;
         }
 
         .cta-section .btn-primary {
-            font-size: 1.4rem;
-            padding: 12px 50px;
-            font-family: 'League Spartan', sans-serif;
+            font-size: 1.5rem;
+            background-color: transparent; /* Mengatur latar belakang menjadi transparan */
+            color: black; /* Mengatur warna teks menjadi hitam */
+            border: transparent; /* Menambah border hitam
+            /* border-radius: 10px; Mengatur border-radius untuk membuat tombol lebih bulat */ 
+            transition: background-color 0.3s, color 0.3s; /* Animasi perubahan warna */
         }
+
+.cta-section .btn-primary:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Mengatur warna latar belakang saat dihover dengan opasitas */
+}
+
+        
 
         #cta-section {
             color: black;
     
         }
-        @media (max-width: 768px) {
+        @media (max-width: 500px) {
             .cta-section {
                 padding: 20px;
                 padding-top: 70px;
@@ -255,12 +264,8 @@
             .cta-section img {
                 height: 300px;
                 margin-left: -2rem;
-                
-                
-                
-                
-            }
 
+            }
             .cta-Download {
                 font-size: 2rem;
             }
@@ -394,9 +399,11 @@
         <div class="row ">
             <div class="col-lg-6 pt-5">
                 <h1><span class="cta-text-download">Download</span><span class="cta-text-app ms-1">App</span></h1>
+                <br><br><br>
                 <p>Ingin menemukan tempat-tempat keren untuk dikunjungi? Unduh aplikasi kami sekarang! Nikmati rekomendasi tempat menarik berdasarkan kategori favorit Anda dan temukan rute tercepat  menuju destinasi impian Anda. Jangan lewatkan pengalaman seru di kota Anda!</p>
-                <a href="#" class="btn btn-primary btn-lg">
-                    <img src="assets/playstore.png" alt="Play Store" height="26px" class="me-2"> DOWNLOAD</a>
+                
+                <a href="#" class="btn btn-primary">
+                    <img src="assets/badge.png" height="100px" ></a>
             </div>
             <div class="col-lg-5">
                 <img src="assets/mockup-1.png" alt="" srcset="" height="500px">
