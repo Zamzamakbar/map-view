@@ -15,16 +15,18 @@
         .navbar-brand {
             font-family: 'League Spartan', sans-serif;
             font-weight: 650;
+            
+        }
+
+
+        .navbar-text-jalanin {
+            color: #073750;
             font-size: 40px;
         }
 
-        .brand-text-jalanin {
-            color: #073750;
-
-        }
-
-        .brand-text-aja {
+        .navbar-text-aja {
             color: #B3D5E6;
+            font-size: 40px;
         }
 
         .navbar-scrolled {
@@ -49,31 +51,50 @@
 
             }
 
-            .navbar-brand span {
-                font-size: 30px;
-            }
+            .navbar-selamat{
+            font-size: 2rem;
+        }
+
+        .navbar-text-jalanin {
+            color: #073750;
+            font-size: 30px;
+        }
+
+        .navbar-text-aja {
+            color: #B3D5E6;
+            font-size: 30px;
+        }
+
 
 
         }
+
+
 
         /* style hero-section */
         .hero-section {
             padding: 90px 90px 90px 90px;
         }
 
-        /* Responsiveness */
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 20px;
-                padding-top: 70px;
-            }
-        }
+        
 
         .hero-section h1 {
-            font-size: 5rem;
+            
             font-weight: bold;
             font-family: 'League Spartan', sans-serif;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero-selamat {
+                font-size: 3.2rem;
+            }
+        .hero-text-jalanin {
+            color: #073750;
+            font-size: 6rem;
+        }
+
+        .hero-text-aja {
+            color: #B3D5E6;
+            font-size: 6rem;
         }
 
         .hero-section p {
@@ -90,21 +111,28 @@
 
         #hero-section {
             color: black;
+    
         }
-
         @media (max-width: 768px) {
+            .hero-section {
+                padding: 20px;
+                padding-top: 70px;
+            }
             .hero-section img {
                 height: 300px;
                 margin-left: -2rem;
                 
+                
+                
+                
             }
 
-            .hero-section h1 {
-                font-size: 0.3rem;
+            .hero-selamat {
+                font-size: 2rem;
             }
 
-            .hero-section h1 .brand-text-jalanin,
-            .brand-text-aja {
+            .hero-text-jalanin,
+            .hero-text-aja {
                 font-size: 3rem;
             }
 
@@ -189,7 +217,7 @@
             <a class="navbar-brand d-flex align-items-center" href="#">
                 <img src="assets/logo-navbar-brand.png" alt="Logo" height="50"
                     class="d-inline-block align-text-center me-2 mb-2">
-                <span class="brand-text-jalanin me-1">Jalanin</span><span class="brand-text-aja">Aja</span>
+                <span class="navbar-text-jalanin me-1">Jalanin</span><span class="navbar-text-aja">Aja</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -213,8 +241,8 @@
         <div class="container-fluid">
             <div class="row ">
                 <div class="col-lg-6 pt-5">
-                    <h1><span style="font-size: 2.5rem;">Selamat datang di </span><span
-                            class="brand-text-jalanin">Jalanin</span><span class="brand-text-aja ms-1">Aja</span></h1>
+                    <h1><span class="hero-selamat">Selamat datang di </span><span
+                            class="hero-text-jalanin">Jalanin</span><span class="hero-text-aja ms-1">Aja</span></h1>
                     <p>Aplikasi untuk menampilkan rekomendasi tempat yang mau dikunjungi berdasarkan kategori dan
                         menampilkan rute menuju tempat yang dituju</p>
                     <a href="#" class="btn btn-primary btn-lg">Start Exploring</a>
