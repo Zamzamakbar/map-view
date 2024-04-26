@@ -125,7 +125,7 @@
 
             font-weight: bold;
             font-family: 'League Spartan', sans-serif;
-            
+
         }
 
         .hero-selamat {
@@ -170,13 +170,15 @@
                 margin-left: -1.5rem;
 
             }
+
             .custom-btn-start,
-    .custom-btn-download {
-        padding: 8px 16px; /* Mengurangi padding tombol untuk tampilan responsif */
-        margin-bottom: 10px;
-        font-size: 10px;
-        
-    }
+            .custom-btn-download {
+                padding: 8px 16px;
+                /* Mengurangi padding tombol untuk tampilan responsif */
+                margin-bottom: 10px;
+                font-size: 10px;
+
+            }
 
             .hero-selamat {
                 font-size: 2rem;
