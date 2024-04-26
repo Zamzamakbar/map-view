@@ -256,14 +256,33 @@
             color: black;
     
         }
-        @media (max-width: 500px) {
+        #cta-section .text-download{
+            margin-top: 6.8rem;
+        }
+        #cta-section .cta-button, #cta-section .btn-primary{
+            height: 100px;
+            width: auto;
+            margin-top: -4rem;
+        }
+        @media (max-width: 768px) {
             .cta-section {
                 padding: 20px;
                 padding-top: 70px;
             }
+            #cta-section .row{
+                margin-top: -8rem;
+            }
             .cta-section img {
                 height: 300px;
                 margin-left: -2rem;
+
+            }
+            #cta-section .cta-button{
+                height: 60px;
+                width: auto;
+                margin-top: 3rem;
+                margin-left: 5rem;
+
 
             }
             .cta-Download {
@@ -395,19 +414,19 @@
 
     <!-- Call to Action -->
    <section class="cta-section " id="cta-section">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row ">
-            <div class="col-lg-6 pt-5">
+            <div class="col-lg-6 text-download ">
                 <h1><span class="cta-text-download">Download</span><span class="cta-text-app ms-1">App</span></h1>
-                <br><br><br>
-                <p>Ingin menemukan tempat-tempat keren untuk dikunjungi? Unduh aplikasi kami sekarang! Nikmati rekomendasi tempat menarik berdasarkan kategori favorit Anda dan temukan rute tercepat  menuju destinasi impian Anda. Jangan lewatkan pengalaman seru di kota Anda!</p>
                 
-                <a href="#" class="btn btn-primary">
-                    <img src="assets/badge.png" height="100px" ></a>
+                <p >Ingin menemukan tempat-tempat keren untuk dikunjungi? Unduh aplikasi kami sekarang! Nikmati rekomendasi tempat menarik berdasarkan kategori favorit Anda dan temukan rute tercepat  menuju destinasi impian Anda. Jangan lewatkan pengalaman seru di kota Anda!</p>
+                
             </div>
             <div class="col-lg-5">
                 <img src="assets/smartphone.png" alt="" srcset="" height="500px">
             </div>
+            <a href="#" class="btn btn-primary ">
+                <img src="assets/badge.png" class="cta-button" ></a>
         </div>
     </div>
 </section>
