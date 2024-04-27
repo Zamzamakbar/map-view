@@ -379,4 +379,42 @@
             }
         }
 
-        /* style cta-section */
+        /* style footer*/
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-text {
+            display: flex;
+            align-items: center;
+        }
+        
+        .navbar-text-jalanin,
+        .navbar-text-aja {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+        
+        
+        .d-flex {
+            display: flex;
+        }
+        
+        .flex-column {
+            flex-direction: column;
+        }
+        
+        .align-items-center {
+            align-items: center;
+        }
+        
+        .mb-2 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .me-2 {
+            margin-right: 0.5rem;
+        }
+          
