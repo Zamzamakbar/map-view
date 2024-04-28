@@ -63,61 +63,61 @@
             padding: 90px 90px 90px 90px;
         }
 
-        .custom-btn-start {
+        #hero-section .custom-btn-start {
             background-color: #073750;
-            /* Warna latar belakang */
+            
             color: #ffffff;
-            /* Warna teks */
+            
             border: 2px solid #073750;
-            /* Border dengan warna yang sama dengan latar belakang */
+            
             border-radius: 20px;
-            /* Sudut yang sedikit lebih bulat */
+            
             padding: 10px 20px;
-            /* Padding tombol */
-            font-size: 10px;
-            /* Ukuran teks */
+            
+            font-size: 20px;
+            
             font-weight: bold;
-            /* Ketebalan teks */
+            
             text-transform: uppercase;
-            /* Merubah teks menjadi huruf kapital */
+            
             transition: background-color 0.3s, color 0.3s;
             margin-right: 0.5rem;
-            /* Efek transisi */
+            
         }
 
-        .custom-btn-start:hover {
+        #hero-section .custom-btn-start:hover {
             background-color: #B3D5E6;
-            /* Warna latar belakang saat dihover */
+            
             color: #073750;
-            /* Warna teks saat dihover */
+            
         }
 
-        .custom-btn-download {
+        #hero-section .custom-btn-download {
             background-color: #B3D5E6;
-            /* Warna latar belakang */
+            
             color: #073750;
-            /* Warna teks */
+            
             border: 2px solid #B3D5E6;
-            /* Border dengan warna yang sama dengan latar belakang */
+            
             border-radius: 20px;
-            /* Sudut yang sedikit lebih bulat */
+            
             padding: 10px 20px;
-            /* Padding tombol */
-            font-size: 10px;
-            /* Ukuran teks */
+            
+            font-size: 20px;
+            
             font-weight: bold;
-            /* Ketebalan teks */
+            
             text-transform: uppercase;
-            /* Merubah teks menjadi huruf kapital */
+            
             transition: background-color 0.3s, color 0.3s;
-            /* Efek transisi */
+            
         }
 
-        .custom-btn-download:hover {
+        #hero-section .custom-btn-download:hover {
             background-color: #073750;
-            /* Warna latar belakang saat dihover */
+            
             color: #ffff;
-            /* Warna teks saat dihover */
+            
         }
 
 
@@ -171,12 +171,14 @@
 
             }
 
-            .custom-btn-start,
-            .custom-btn-download {
-                padding: 8px 16px;
-                /* Mengurangi padding tombol untuk tampilan responsif */
+            #hero-section .custom-btn-start,
+            #hero-section .custom-btn-download {
+                
+                padding: 6px 12px;
+                
                 margin-bottom: 10px;
-                font-size: 10px;
+                font-size: 15px;
+                border-radius: 15px;
 
             }
 
@@ -380,19 +382,33 @@
         }
 
         /* style footer*/
-        .navbar-brand {
+
+        .footer-text-jalanin {
+            color: #073750;
+            font-size: 40px;
+        }
+
+        .footer-text-aja {
+            color: #B3D5E6;
+            font-size: 40px;
+        }
+        .footer-icon {
             display: flex;
+            align-items: center;
+            font-family: 'League Spartan', sans-serif;
+            font-weight: 650;
+            text-decoration: none;
+        }
+        
+        .footer-text {
+            text-decoration: none;
+            
             align-items: center;
         }
         
-        .navbar-text {
-            display: flex;
-            align-items: center;
-        }
-        
-        .navbar-text-jalanin,
-        .navbar-text-aja {
-            display: inline-block;
+        .footer-text-jalanin,
+        .footer-text-aja {
+            
             margin: 0;
             padding: 0;
         }
@@ -417,4 +433,5 @@
         .me-2 {
             margin-right: 0.5rem;
         }
+        
           
